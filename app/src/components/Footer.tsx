@@ -4,7 +4,8 @@ const Footer = () => {
             <div class="wrapper">
                 <div class="twelfth_earth" />
                 <div class="twelfth_title">
-                    Now we are developing IP & raising <span class="nowrap">A round</span>
+                    Now we are developing IP & raising{' '}
+                    <span class="whitespace-nowrap ">A round</span>
                 </div>
                 <div class="twelfth_under_title">For more information:</div>
                 <a

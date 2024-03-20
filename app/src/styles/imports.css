@@ -12,7 +12,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:500');
 
 /* Custom Imports */
-/* @import 'index.css'; */
-@import 'scrollbar.css';
 @import 'index.css';
-/* @import 'header-wrapper.css'; */
+@import 'scrollbar.css';

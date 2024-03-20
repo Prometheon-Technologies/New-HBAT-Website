@@ -1,9 +1,17 @@
+import { Icons } from './ui/icons'
+
 const Header = () => {
     return (
         <div class="fixed_top">
             <div class="wrapper fixed_top__inner">
-                <a href="#top">
-                    <img src="img/svg/logo.svg" class="logo" alt="Logo" />
+                <a class='logo' href="#top">
+                    <Icons.logo
+                        size={{
+                            width: 100,
+                            height: 100,
+                        }}
+                        fill="#ffffff"
+                    />
                 </a>
                 <button class="burger_king">
                     <span />

@@ -3,8 +3,13 @@ import { SiMinutemailer } from 'solid-icons/si'
 const Heading = () => {
     return (
         <div class="slide first" id="top" data-slide="first">
+<<<<<<< Updated upstream
             <div class="wrapper full_height in_the_middle gap-4">
                 <div class="center">
+=======
+            <div class="wrapper full_height in_the_middle">
+                <div class="text-center">
+>>>>>>> Stashed changes
                     <div class="first_heading">
                         Prometheon Technologies
                         <span>Helping You to Develop Game-changing technology</span>

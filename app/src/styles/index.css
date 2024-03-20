@@ -1,45 +1,51 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Custom tailwind class overrides */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Utilities */
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    body {
+        @apply bg-[#0f0f1a] text-[#fefefe] font-sans font-normal transition-[all_1s_ease-in-out];
+    }
+
+    html,
+    body {
+        @apply h-full snap-y snap-mandatory;
+    }
+
+    a {
+        @apply no-underline;
+    }
+
+    img {
+        @apply align-top;
+    }
+
+    video {
+        @apply max-w-full h-auto;
+    }
 }
 
-.preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-}
-
+/* Custom Properties and Apply */
 :root {
     --wrapper: 1200px;
-
-    /* Background Theme Color */
     --theme_bg: #0f0f1a;
-
-    /* Link Highlight */
     --link_hl: #c5a365;
-
-    /* Blue Highlights */
     --hl: #00d1ff;
-
-    /* Text Color on White bg */
     --wblue: #424753;
-
-    /* White bg */
     --white: #fefefe;
-
-    /* Text */
-
     --gap: 20px;
     --transition: all 0.5s cubic-bezier(0.54, 0.22, 0.22, 0.97);
     --bgtransition: all 1s cubic-bezier(0.54, 0.22, 0.22, 0.97);
     --oneway: all 1500ms cubic-bezier(0.425, 0.43, 0.295, 1.545);
 }
 
+<<<<<<< Updated upstream
 html {
     scroll-behavior: smooth;
 }
@@ -50,14 +56,20 @@ body {
     color: var(--white);
     font-weight: 400;
     transition: var(--bgtransition);
+=======
+/* Global Resets using @apply */
+*,
+*::before,
+*::after {
+    @apply m-0 p-0 box-border;
+>>>>>>> Stashed changes
 }
 
-html,
-body {
-    height: 100%;
-    scroll-snap-type: y mandatory;
+.preload * {
+    @apply transition-none !important;
 }
 
+<<<<<<< Updated upstream
 a {
     text-decoration: none;
 }
@@ -83,16 +95,21 @@ video {
     white-space: nowrap;
 }
 
+=======
+>>>>>>> Stashed changes
 .wrapper {
     position: relative;
     max-width: var(--wrapper);
     margin: 0 auto;
     padding: 0 var(--gap);
+<<<<<<< Updated upstream
     /* background: red; */
 }
 
 .full_height {
     height: 100vh;
+=======
+>>>>>>> Stashed changes
 }
 
 .two_columns {
@@ -113,7 +130,7 @@ video {
     top: 0;
     left: 0;
     right: 0;
-    padding: 36px 0;
+    padding: 12px 0;
     background: var(--theme_bg);
     z-index: 1000;
     transition: var(--transition);
@@ -133,8 +150,6 @@ body.first .fixed_top {
 
 .logo {
     display: block;
-    width: 190px;
-    height: 40px;
     transition: var(--bgtransition);
     transform: translateY(-50%);
     opacity: 0;
